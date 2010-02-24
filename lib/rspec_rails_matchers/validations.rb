@@ -29,16 +29,14 @@ module RspecRailsMatchers
               )
           }
           
-          invalid_on_blank = 
-            lambda {
-              model.send("#{_attribute_}=", nil)
-              model.valid?
+          invalid_on_blank = lambda {
+            model.send("#{_attribute_}=", nil)
+            model.valid?
 
-              !model.errors[_attribute_].include?(
-                I18n::t('errors.messages.not_a_number')
-              )
-            }
-
+            !model.errors[_attribute_].include?(
+              I18n::t('errors.messages.not_a_number')
+            )
+          }
 
           invalid_on_non_numeric.call && 
             (options[:allow_blank] == true ? invalid_on_blank.call : true)
