@@ -1,6 +1,17 @@
-= rspec-rails-matchers
+= Dry Rspec is Fun!
 
-Description goes here.
+This gem contains a lot of macros for rails specific purposes. This will only work for Rails 3 above and Rspec 2.0 above. A couple of examples:
+
+
+    describe User do
+      subject { User.new }
+
+      it { should validate_presence_of(:username) }
+      it { should validate_uniqueness_of(:email)  }
+      it { should validate_length_of(:password, :within => 3..20) }
+      it { should belong_to(:group) }
+      it { should have_many(:articles) }
+    end
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +25,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Cyril David. See LICENSE for details.
+Copyright (c) 2010 Sinefunc. See LICENSE for details.
