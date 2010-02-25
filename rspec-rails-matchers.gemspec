@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rspec-rails-matchers}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril David"]
   s.date = %q{2010-02-26}
   s.description = %q{Helps you write rspec with rails for fun}
-  s.email = %q{cyx.ucron@gmail.com}
+  s.email = %q{cyx@sinefunc.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
      "lib/rspec_rails_matchers/validations/uniqueness_of.rb",
      "rspec-rails-matchers.gemspec"
   ]
-  s.homepage = %q{http://github.com/cyx/rspec-rails-matchers}
+  s.homepage = %q{http://github.com/sinefunc/rspec-rails-matchers}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
