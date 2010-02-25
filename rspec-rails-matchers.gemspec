@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rspec-rails-matchers}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril David"]
-  s.date = %q{2010-02-25}
+  s.date = %q{2010-02-26}
   s.description = %q{TODO: longer description of your gem}
   s.email = %q{cyx.ucron@gmail.com}
   s.extra_rdoc_files = [
@@ -21,7 +21,23 @@ Gem::Specification.new do |s|
      ".gitignore",
      "LICENSE",
      "README.rdoc",
-     "Rakefile"
+     "Rakefile",
+     "VERSION",
+     "lib/rspec-rails-matchers.rb",
+     "lib/rspec_rails_matchers/associations.rb",
+     "lib/rspec_rails_matchers/associations/belong_to.rb",
+     "lib/rspec_rails_matchers/associations/have_and_belong_to_many.rb",
+     "lib/rspec_rails_matchers/associations/have_many.rb",
+     "lib/rspec_rails_matchers/associations/have_one.rb",
+     "lib/rspec_rails_matchers/associations/helpers.rb",
+     "lib/rspec_rails_matchers/message.rb",
+     "lib/rspec_rails_matchers/validations.rb",
+     "lib/rspec_rails_matchers/validations/confirmation_of.rb",
+     "lib/rspec_rails_matchers/validations/length_of.rb",
+     "lib/rspec_rails_matchers/validations/numericality_of.rb",
+     "lib/rspec_rails_matchers/validations/presence_of.rb",
+     "lib/rspec_rails_matchers/validations/uniqueness_of.rb",
+     "rspec-rails-matchers.gemspec"
   ]
   s.homepage = %q{http://github.com/cyx/rspec-rails-matchers}
   s.rdoc_options = ["--charset=UTF-8"]
