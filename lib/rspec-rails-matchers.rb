@@ -7,9 +7,11 @@ module RspecRailsMatchers
   autoload :Message,      'rspec_rails_matchers/message'
   autoload :Validations,  'rspec_rails_matchers/validations'
   autoload :Associations, 'rspec_rails_matchers/associations'
+  autoload :Behavior,     'rspec_rails_matchers/behavior'
 end
 
 Rspec.configure do |c|
   c.include RspecRailsMatchers::Validations
   c.include RspecRailsMatchers::Associations
+  c.include RspecRailsMatchers::Behavior
 end
