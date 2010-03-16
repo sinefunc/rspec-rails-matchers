@@ -26,10 +26,7 @@ module RspecRailsMatchers
             if min && min >= 1
               model.send("#{attr}=", 'a' * (min - 1))
 
-              model.invalid? && 
-                model.errors[attr].include?(
-                  I18n::t('errors.messages.too_short', :count => min)
-                )
+              model.invalid? && model.errors[attr].any?
             end
           end
 
@@ -39,10 +36,7 @@ module RspecRailsMatchers
             if max
               model.send("#{attr}=", 'a' * (max + 1))
 
-              model.invalid? && 
-                model.errors[attr].include?(
-                  I18n::t('errors.messages.too_long', :count => max)
-                )
+              model.invalid? && model.errors[attr].any?
             end
           end
         end

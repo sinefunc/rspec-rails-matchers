@@ -1,7 +1,7 @@
 require 'rspec'
 require 'rspec/matchers'
 
-$LOAD_PATH.unshift(File.expand_path('../../../', __FILE__))
+$LOAD_PATH.unshift(File.expand_path('../', __FILE__))
 
 module RspecRailsMatchers
   autoload :Message,      'rspec_rails_matchers/message'
