@@ -1,4 +1,4 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Associations
     module Helpers
       def associations( model, type )
