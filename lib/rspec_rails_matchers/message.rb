@@ -1,4 +1,4 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Message
     def self.error( options = {} )
       msg =    %(expected #{transform(options[:expected])})

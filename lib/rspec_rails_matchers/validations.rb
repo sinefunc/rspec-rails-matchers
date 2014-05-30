@@ -1,4 +1,4 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Validations
     autoload :PresenceOf,     'rspec_rails_matchers/validations/presence_of'
     autoload :NumericalityOf, 'rspec_rails_matchers/validations/numericality_of'

@@ -1,8 +1,8 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Validations
     module UniquenessOf
       def validate_uniqueness_of(attribute, options = {})
-        Rspec::Matchers::Matcher.new :validate_uniqueness_of, attribute do |_attr_|
+        RSpec::Matchers::Matcher.new :validate_uniqueness_of, attribute do |_attr_|
           match do |model|
             duplicate = create_duplicate_record(model, _attr_, options[:scope])
 
@@ -19,7 +19,7 @@ module RspecRailsMatchers
           end
 
           failure_message_for_should do |model|
-            RspecRailsMatchers::Message.error(
+            RSpecRailsMatchers::Message.error(
               :expected => 
                 [ "%s to validate uniqueness of %s, %s", model, _attr_, options ]
             )

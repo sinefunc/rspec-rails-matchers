@@ -3,7 +3,7 @@ require 'rspec/matchers'
 
 $LOAD_PATH.unshift(File.expand_path('../', __FILE__))
 
-module RspecRailsMatchers
+module RSpecRailsMatchers
   autoload :Message,      'rspec_rails_matchers/message'
   autoload :Validations,  'rspec_rails_matchers/validations'
   autoload :Associations, 'rspec_rails_matchers/associations'
@@ -11,9 +11,9 @@ module RspecRailsMatchers
   autoload :Sugar,        'rspec_rails_matchers/sugar'
 end
 
-Rspec.configure do |c|
-  c.include RspecRailsMatchers::Validations
-  c.include RspecRailsMatchers::Associations
-  c.include RspecRailsMatchers::Behavior
-  c.include RspecRailsMatchers::Sugar
+RSpec.configure do |c|
+  c.include RSpecRailsMatchers::Validations
+  c.include RSpecRailsMatchers::Associations
+  c.include RSpecRailsMatchers::Behavior
+  c.include RSpecRailsMatchers::Sugar
 end

@@ -1,4 +1,4 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Validations
     module LengthOf
       def validate_length_of(attribute, options)
@@ -6,14 +6,14 @@ module RspecRailsMatchers
           
         min, max = min_max_for(options)
         
-        Rspec::Matchers::Matcher.new :validate_length_of, attribute do |_attribute_|
+        RSpec::Matchers::Matcher.new :validate_length_of, attribute do |_attribute_|
           match do |model|
             validates_minimum?(model, min, _attribute_) && 
               validates_maximum?(model, max, _attribute_)
           end
 
           failure_message_for_should do |model|
-            RspecRailsMatchers::Message.error(
+            RSpecRailsMatchers::Message.error(
               :expected => 
                 [ "%s to validate length of %s, %s", model, _attribute_, options ]
             )

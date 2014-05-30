@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rspec-rails-matchers"
-    gem.summary = %Q{Rspec 2.0 only rails matchers}
+    gem.summary = %Q{RSpec 2.0 only rails matchers}
     gem.description = %Q{Helps you write rspec with rails for fun}
     gem.email = "cyx@sinefunc.com"
     gem.homepage = "http://github.com/sinefunc/rspec-rails-matchers"

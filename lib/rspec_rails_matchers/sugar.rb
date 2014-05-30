@@ -1,4 +1,4 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Sugar
     def self.included( rspec )
       rspec.extend ClassContextMethods

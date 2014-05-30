@@ -1,4 +1,4 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Associations
     autoload :Helpers,             'rspec_rails_matchers/associations/helpers'
     autoload :HaveMany,            'rspec_rails_matchers/associations/have_many'

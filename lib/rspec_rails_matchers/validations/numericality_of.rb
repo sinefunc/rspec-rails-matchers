@@ -1,8 +1,8 @@
-module RspecRailsMatchers
+module RSpecRailsMatchers
   module Validations
     module NumericalityOf
       def validate_numericality_of( attribute, options = {} )
-        Rspec::Matchers::Matcher.new :validate_numericality_of, attribute do |_attr_|
+        RSpec::Matchers::Matcher.new :validate_numericality_of, attribute do |_attr_|
           match do |model|
             invalid_on_non_numeric?(model, _attr_) && 
               (options[:allow_blank] == true ? 
@@ -11,7 +11,7 @@ module RspecRailsMatchers
           end
 
           failure_message_for_should do |model|
-            RspecRailsMatchers::Message.error(
+            RSpecRailsMatchers::Message.error(
               :expected => 
                 [ "%s to validate numericality of %s, %s", model, _attr_, options ]
             )

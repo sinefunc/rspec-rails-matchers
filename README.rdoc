@@ -1,6 +1,6 @@
-= Dry Rspec is Fun!
+= Dry RSpec is Fun!
 
-This gem contains a lot of macros for rails specific purposes. This will only work for Rails 3 above and Rspec 2.0 above. A couple of examples:
+This gem contains a lot of macros for rails specific purposes. This will only work for Rails 3 above and RSpec 2.0 above. A couple of examples:
 
 
     describe User do
